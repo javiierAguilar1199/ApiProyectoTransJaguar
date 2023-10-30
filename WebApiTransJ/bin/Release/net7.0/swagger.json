@@ -1,0 +1,1436 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "WebApiTransJ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Bitacora/RegistrarBitacora": {
+      "post": {
+        "tags": [
+          "Bitacora"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BitacoraViajeEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Bitacora/ActualizarBitacora": {
+      "put": {
+        "tags": [
+          "Bitacora"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BitacoraViajeEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Bitacora/CambiarEstadoBitacora": {
+      "put": {
+        "tags": [
+          "Bitacora"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdBitacora",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Bitacora/listarBitacoraViajes": {
+      "get": {
+        "tags": [
+          "Bitacora"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Bitacora/ListarBitacoraViajeInac": {
+      "get": {
+        "tags": [
+          "Bitacora"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Bitacora/ListarBitacoraViajeXID": {
+      "get": {
+        "tags": [
+          "Bitacora"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdBItacora",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/ListarMunicipio": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "departamento",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/ListDeptos": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/listaRoles": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/listaMarcas": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/UsuarioOrganizacion": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/UsuarioRoles": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/ListaOperacion": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Catalogo/ListaViajesDetpt": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horarios/RegistrarHorario": {
+      "post": {
+        "tags": [
+          "Horarios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/HorarioEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horarios/ActualizarHorario": {
+      "put": {
+        "tags": [
+          "Horarios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/HorarioEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horarios/CambiarEstadoHorario": {
+      "put": {
+        "tags": [
+          "Horarios"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdHorario",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horarios/listarHorarios": {
+      "get": {
+        "tags": [
+          "Horarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horarios/listarHorarioInactivos": {
+      "get": {
+        "tags": [
+          "Horarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horarios/listarHorariosXID": {
+      "get": {
+        "tags": [
+          "Horarios"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdHorario",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/InicioSesion": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/RegistrarPiloto": {
+      "post": {
+        "tags": [
+          "Pilotos"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PilotoEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/ActualizarPiloto": {
+      "put": {
+        "tags": [
+          "Pilotos"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PilotoEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/CambiarEstadoPiloto": {
+      "put": {
+        "tags": [
+          "Pilotos"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdPiloto",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/listaPilotos": {
+      "get": {
+        "tags": [
+          "Pilotos"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/listaPilotosActivos": {
+      "get": {
+        "tags": [
+          "Pilotos"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/ListaPilotosViajes": {
+      "get": {
+        "tags": [
+          "Pilotos"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/listaPilotosInactivos": {
+      "get": {
+        "tags": [
+          "Pilotos"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/listarPilotXId": {
+      "get": {
+        "tags": [
+          "Pilotos"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdPiloto",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pilotos/ListaViajesXPiloto": {
+      "get": {
+        "tags": [
+          "Pilotos"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdPiloto",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "tipMes",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/RegistrarSocio": {
+      "post": {
+        "tags": [
+          "Socios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/SocioEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/ActualizarSocios": {
+      "put": {
+        "tags": [
+          "Socios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/SocioEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/CambiarEstadoSocio": {
+      "put": {
+        "tags": [
+          "Socios"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdSocio",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/listaSocios": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/listaSociosActivos": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/listaSociosInactivos": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/ListarSocioXId": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdSocio",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/ListarSocioXNombre": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "Nombre",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/CantidadViajeXSocio": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Socios/ListaViajesXSocio": {
+      "get": {
+        "tags": [
+          "Socios"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdSocio",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "tipMes",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/RegistrarUnidad": {
+      "post": {
+        "tags": [
+          "Unidades"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UnidadEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/ActualizarUnidad": {
+      "put": {
+        "tags": [
+          "Unidades"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UnidadEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/CambiarEstadoUnidad": {
+      "put": {
+        "tags": [
+          "Unidades"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUnidad",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/listarUnidades": {
+      "get": {
+        "tags": [
+          "Unidades"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdSocio",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/listarUnidadesActivas": {
+      "get": {
+        "tags": [
+          "Unidades"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/listarUnidadesInactivas": {
+      "get": {
+        "tags": [
+          "Unidades"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/listarUnidadesXId": {
+      "get": {
+        "tags": [
+          "Unidades"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUnidad",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/ListaCantidadViajeUnidad": {
+      "get": {
+        "tags": [
+          "Unidades"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Unidades/ListaViajesUnidad": {
+      "get": {
+        "tags": [
+          "Unidades"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUnidad",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "tipMes",
+            "type": "integer",
+            "format": "int32",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/RegistrarUsuario": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UsuarioEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/ActualizarUsuario": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UsuarioEntity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/listaUsuarioActivo": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/CambiarEstadoUsuario": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "UsuarioModificacion",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/ListarUsuariosXId": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BitacoraViajeEntity": {
+      "type": "object",
+      "properties": {
+        "pIdNumeroEntrega": {
+          "type": "string"
+        },
+        "pFechaEntrega": {
+          "type": "string"
+        },
+        "pHoraEntrega": {
+          "type": "string"
+        },
+        "pDiaEntrega": {
+          "type": "string"
+        },
+        "pLugarEntrega": {
+          "type": "string"
+        },
+        "pProductoEntrega": {
+          "type": "string"
+        },
+        "pIdUsuario": {
+          "type": "string"
+        },
+        "pObservaciones": {
+          "type": "string"
+        },
+        "pIdPiloto": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdUnidad": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdSocio": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdDepartamento": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdMunicipio": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pFechaCreacion": {
+          "type": "string"
+        },
+        "pTransaccionEstado": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionMensaje": {
+          "type": "string"
+        },
+        "pIdBitacora": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "HorarioEntity": {
+      "type": "object",
+      "properties": {
+        "pIdHorario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pHoraEntrega": {
+          "type": "string"
+        },
+        "pFechaCarga": {
+          "type": "string"
+        },
+        "pIdUsuario": {
+          "type": "string"
+        },
+        "pPlanta": {
+          "type": "string"
+        },
+        "pIdPiloto": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdUnidad": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdSocio": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionEstado": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionMensaje": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginEntity": {
+      "type": "object",
+      "properties": {
+        "pId_usuario": {
+          "type": "string"
+        },
+        "pContrasenia": {
+          "type": "string"
+        },
+        "pNombre": {
+          "type": "string"
+        },
+        "pCorreo": {
+          "type": "string"
+        },
+        "pToken": {
+          "type": "string"
+        },
+        "pDireccion": {
+          "type": "string"
+        },
+        "pMsg": {
+          "type": "string"
+        },
+        "pEstado": {
+          "type": "string"
+        },
+        "pDesRoles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PilotoEntity": {
+      "type": "object",
+      "properties": {
+        "pNombre": {
+          "type": "string"
+        },
+        "pDireccion": {
+          "type": "string"
+        },
+        "pSNombre": {
+          "type": "string"
+        },
+        "pPApellido": {
+          "type": "string"
+        },
+        "pSApellido": {
+          "type": "string"
+        },
+        "pNoTelefono": {
+          "type": "string"
+        },
+        "pNoDPI": {
+          "type": "string"
+        },
+        "pIdUsuario": {
+          "type": "string"
+        },
+        "pTransaccionEstado": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionMensaje": {
+          "type": "string"
+        },
+        "pIdPiloto": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "SocioEntity": {
+      "type": "object",
+      "properties": {
+        "pNombre": {
+          "type": "string"
+        },
+        "pSNombre": {
+          "type": "string"
+        },
+        "pPApellido": {
+          "type": "string"
+        },
+        "pSApellido": {
+          "type": "string"
+        },
+        "pNoTelefono": {
+          "type": "string"
+        },
+        "pNoDPI": {
+          "type": "string"
+        },
+        "pIdUsuario": {
+          "type": "string"
+        },
+        "pDireccion": {
+          "type": "string"
+        },
+        "pTransaccionEstado": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionMensaje": {
+          "type": "string"
+        },
+        "pIdSocio": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UnidadEntity": {
+      "type": "object",
+      "properties": {
+        "pCodigoUnidad": {
+          "type": "string"
+        },
+        "pColorUnidad": {
+          "type": "string"
+        },
+        "pNoPlaca": {
+          "type": "string"
+        },
+        "pIdUsuario": {
+          "type": "string"
+        },
+        "pIdUnidad": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdSocio": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pModelo": {
+          "type": "string"
+        },
+        "pIdMarca": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionEstado": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionMensaje": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UsuarioEntity": {
+      "type": "object",
+      "properties": {
+        "pIdUsuario": {
+          "type": "string"
+        },
+        "pPNombre": {
+          "type": "string"
+        },
+        "sNombre": {
+          "type": "string"
+        },
+        "pPApellido": {
+          "type": "string"
+        },
+        "pSApellido": {
+          "type": "string"
+        },
+        "pDireccion": {
+          "type": "string"
+        },
+        "pNoDPI": {
+          "type": "string"
+        },
+        "pNoTelefono": {
+          "type": "string"
+        },
+        "pCorreo": {
+          "type": "string"
+        },
+        "pContrasenia": {
+          "type": "string"
+        },
+        "pIdRol": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdOrganizacion": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pIdUsuarioCreacion": {
+          "type": "string"
+        },
+        "pTransaccionEstado": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pTransaccionMensaje": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "format": "date",
+          "type": "string"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
