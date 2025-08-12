@@ -1,0 +1,15 @@
+C:\Users\javii\source\repos\logicLayer\bin\Debug\net7.0\logicLayer.deps.json
+C:\Users\javii\source\repos\logicLayer\bin\Debug\net7.0\logicLayer.dll
+C:\Users\javii\source\repos\logicLayer\bin\Debug\net7.0\logicLayer.pdb
+C:\Users\javii\source\repos\logicLayer\bin\Debug\net7.0\DataLayer.dll
+C:\Users\javii\source\repos\logicLayer\bin\Debug\net7.0\DataLayer.pdb
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.csproj.AssemblyReference.cache
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.AssemblyInfoInputs.cache
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.AssemblyInfo.cs
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.csproj.CoreCompileInputs.cache
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.csproj.CopyComplete
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.dll
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\refint\logicLayer.dll
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\logicLayer.pdb
+C:\Users\javii\source\repos\logicLayer\obj\Debug\net7.0\ref\logicLayer.dll
